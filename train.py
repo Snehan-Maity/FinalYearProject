@@ -11,7 +11,7 @@ from src.model import ProtoNet
 # SETTINGS
 # ======================
 
-DATASET_PATH = "dataset/WHU-RS19"
+DATASET_PATH = "/content/drive/MyDrive/WHU-RS19"
 
 EPISODES = 3000
 
@@ -200,5 +200,6 @@ for episode in range(EPISODES):
 torch.save(model.state_dict(), MODEL_SAVE_PATH)
 
 print("\nTraining complete.")
+
 
 print("Model saved at:", MODEL_SAVE_PATH)
